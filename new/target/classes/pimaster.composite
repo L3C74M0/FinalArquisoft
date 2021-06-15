@@ -1,0 +1,15 @@
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0"
+  xmlns:frascati="http://frascati.ow2.org/xmlns/sca/1.1"
+  name="PiMasterComposite">
+
+  <component name="pimaster">
+s
+    <service name="piCalculatorServices">
+      <frascati:binding.rmi host="localhost" serviceName="picalulator-services" port="1099"/>
+    </service>
+
+    <implementation.java class="co.edu.icesi.arquisoft.core.Master" />
+
+  </component>
+
+</composite>

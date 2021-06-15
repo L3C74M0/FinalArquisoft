@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" name="sort-escalable">
+  <service name="r" promote="control/Runnable"/>
+  
+  <component name="control">
+    <implementation.java class="sort.Control"/> 
+  </component>
+  
+  <component name="Ns1">
+    <implementation.java class="sort.SortNode"/>
+  </component> 
+
+  <component name="Ns2">
+    <implementation.java class="sort.SortNode"/>
+  </component> 
+
+  <component name="Ns3">
+    <implementation.java class="sort.SortNode"/>
+  </component>
+
+  <component name="Ns4">
+    <implementation.java class="sort.SortNode"/>
+  </component>
+
+  <component name="Ns5">
+    <implementation.java class="sort.SortNode"/>
+  </component>
+
+  <component name="Ns6">
+    <implementation.java class="sort.SortNode"/>
+  </component>
+
+  <component name="Ns7">
+    <implementation.java class="sort.SortNode"/>
+  </component>
+
+  <component name="Ns8">
+    <implementation.java class="sort.SortNode"/>
+  </component>
+  
+  <component name="Nm1">
+    <implementation.java class="sort.MergeNode"/>
+  </component> 
+  <component name="Nm2">
+    <implementation.java class="sort.MergeNode"/>
+  </component> 
+  <component name="Nm3">
+    <implementation.java class="sort.MergeNode"/>
+  </component> 
+  <component name="Nm4">
+    <implementation.java class="sort.MergeNode"/>
+  </component> 
+  <component name="Nm5">
+    <implementation.java class="sort.MergeNode"/>
+  </component> 
+  <component name="Nm6">
+    <implementation.java class="sort.MergeNode"/>
+  </component> 
+  <component name="Nm7">
+    <implementation.java class="sort.MergeNode"/>
+  </component> 
+
+ <wire source="control/s1" target="Ns1/Sorter"/>
+ <wire source="control/s2" target="Ns2/Sorter"/>
+ <wire source="control/s3" target="Ns3/Sorter"/>
+ <wire source="control/s4" target="Ns4/Sorter"/>
+ <wire source="control/s5" target="Ns5/Sorter"/>
+ <wire source="control/s6" target="Ns6/Sorter"/>
+ <wire source="control/s7" target="Ns7/Sorter"/>
+ <wire source="control/s8" target="Ns8/Sorter"/>
+ <wire source="control/m1" target="Nm1/Merger"/>
+ <wire source="control/m2" target="Nm2/Merger"/>
+ <wire source="control/m3" target="Nm3/Merger"/>
+ <wire source="control/m4" target="Nm4/Merger"/>
+ <wire source="control/m5" target="Nm5/Merger"/>
+ <wire source="control/m6" target="Nm6/Merger"/>
+ <wire source="control/m7" target="Nm7/Merger"/>
+
+</composite>
+ 

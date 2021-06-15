@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0"
+  xmlns:frascati="http://frascati.ow2.org/xmlns/sca/1.1"
+  targetNamespace="http://frascati.ow2.org/helloworld-rmi"
+  name="client">
+  
+  <component name="workersComponent">
+
+    <implementation.java class="controller.Client" />
+
+    <service name="r" promote="control/r">
+    <interface.java interface="java.lang.Runnable" />
+  </service>
+
+  </component>
+
+  <!-- <component name="ns1">
+  	<implementation.java class="sort.SortNode" />
+  </component> -->
+  
+  <!-- <wire source="control/s1" target="ns1/Sorter"/> -->
+  <wire source="control/workers" target="workersComponent/workers"/>
+
+</composite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0"
+  xmlns:frascati="http://frascati.ow2.org/xmlns/sca/1.1"
+  targetNamespace="http://frascati.ow2.org/helloworld-rmi"
+  name="mq6">
+  <component name="ns6">
+  	<implementation.java class="sort.SortNode" />
+ 	<service name="sorter6">
+  		 <frascati:binding.rmi host="localhost" serviceName="rmiservice9" port="2009"/>
+   	</service>
+   	
+  </component>
+    <component name="nm5">
+  	<implementation.java class="sort.MergeNode" />
+  	<service name="merger5">
+  		<frascati:binding.rmi host="localhost" serviceName="rmiservice10" port="2010"/>
+  	</service>
+  </component>
+  
+
+</composite>
