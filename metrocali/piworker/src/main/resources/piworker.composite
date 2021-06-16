@@ -18,7 +18,7 @@
 
     <implementation.java class="co.edu.icesi.arquisoft.core.WorkerSlave" />
     
-    <property name="randomSeed">100101</property>
+    <property name="randomSeed">153</property>
 	
   </component>
 

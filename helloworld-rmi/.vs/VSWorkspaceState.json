@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\client",
+    "\\client\\src",
+    "\\client\\src\\main",
+    "\\client\\src\\main\\java",
+    "\\client\\src\\main\\java\\org",
+    "\\client\\src\\main\\java\\org\\ow2",
+    "\\client\\src\\main\\java\\org\\ow2\\frascati",
+    "\\client\\src\\main\\java\\org\\ow2\\frascati\\examples",
+    "\\client\\src\\main\\java\\org\\ow2\\frascati\\examples\\helloworld",
+    "\\client\\src\\main\\java\\org\\ow2\\frascati\\examples\\helloworld\\annotated"
+  ],
+  "SelectedNode": "\\client\\src\\main\\java\\org\\ow2\\frascati\\examples\\helloworld\\annotated\\ClientImpl.java",
+  "PreviewInSolutionExplorer": false
+}

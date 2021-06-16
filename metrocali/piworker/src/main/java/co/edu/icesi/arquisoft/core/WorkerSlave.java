@@ -55,13 +55,13 @@ public class WorkerSlave implements Runnable {
 			Workload workload = piCalculatorServices.getWorkload();
 			
 			if(workload != null) {
+				System.out.println("Procesando");
 				Result result = calculateWorkload(workload);
 				piCalculatorServices.pushResult(result);
 			}
 			
 			try {
 				Thread.sleep(1000);
-				System.out.println("Esperando...");
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
